@@ -29,7 +29,7 @@ const server = app.listen(PORT, console.log(`server started on ${PORT}`));
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://conversa1.netlify.app",
   },
 });
 

@@ -29,7 +29,7 @@ const server = app.listen(PORT, console.log(`server started on ${PORT}`));
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "https://ghosttext.netlify.app/",
+    origin: "https://ghosttext.netlify.app",
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   },
